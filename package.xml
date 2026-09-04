@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>ConverterFlow Mesh Check</name>
+  <description>
+    Reports why a mesh is not a solid, instead of only telling you that it is
+    not. Counts boundary edges and the loops they form, non-manifold edges,
+    disconnected shells and inconsistent winding, and prints the bounding box
+    and volume. The analysis runs locally; nothing is uploaded.
+  </description>
+  <version>1.0.0</version>
+  <date>2026-09-04</date>
+  <maintainer email="converterflow@gmail.com">ConverterFlow</maintainer>
+  <license file="LICENSE">MIT</license>
+  <url type="repository" branch="main">https://github.com/converterflow/freecad-mesh-check</url>
+  <url type="readme">https://github.com/converterflow/freecad-mesh-check/blob/main/README.md</url>
+  <url type="bugtracker">https://github.com/converterflow/freecad-mesh-check/issues</url>
+  <icon>ConverterFlowCheck.svg</icon>
+
+  <content>
+    <macro>
+      <name>ConverterFlow Mesh Check</name>
+      <description>
+        Select a mesh, run the macro, read the report in the Report view.
+      </description>
+      <version>1.0.0</version>
+      <icon>ConverterFlowCheck.svg</icon>
+      <subdirectory>./</subdirectory>
+      <files>
+        <file>ConverterFlowCheck.FCMacro</file>
+        <file>ConverterFlowCheck.svg</file>
+      </files>
+      <freecadmin>0.19</freecadmin>
+    </macro>
+  </content>
+</package>
